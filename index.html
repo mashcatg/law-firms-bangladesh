@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRW Law Firm - Bangladesh's #1 Law Firm 2025 | Legal Excellence</title>
+    <meta name="description" content="Bangladesh's premier law firm specializing in corporate law, M&A, banking, and international trade. Ranked #1 by Bloomberg, IFLR1000 & The Business Standard.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CRITICAL CSS INLINED */
+        :root {
+            --navy: #0a1f3a;
+            --gold: #d4af37;
+            --white: #ffffff;
+            --gray: #f8f9fa;
+            --dark-gray: #6c757d;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+            background-color: var(--white);
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .btn-primary {
+            background-color: var(--gold);
+            color: var(--navy);
+            border: 2px solid var(--gold);
+        }
+        
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--gold);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--navy);
+            border: 2px solid var(--navy);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--navy);
+            color: var(--white);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: var(--transition);
+        }
+        
+        header.scrolled {
+            background-color: var(--white);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--navy);
+        }
+        
+        .logo span {
+            color: var(--gold);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-item {
+            margin-left: 2rem;
+            position: relative;
+        }
+        
+        .nav-link {
+            font-weight: 500;
+            color: var(--navy);
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--gold);
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding-top: 10rem;
+            padding-bottom: 5rem;
+            background: linear-gradient(135deg, rgba(10,31,58,0.9) 0%, rgba(10,31,58,0.8) 100%), url('hero-bg.jpg') no-repeat center center/cover;
+            color: var(--white);
+            position: relative;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .trust-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: rgba(255,255,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .trust-badge i {
+            color: var(--gold);
+            margin-right: 0.5rem;
+        }
+        
+        /* Why TRW Section */
+        .why-trw {
+            background-color: var(--white);
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: var(--dark-gray);
+        }
+        
+        /* Practice Areas Section */
+        .practice-areas {
+            background-color: var(--gray);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        
+        /* Client Section */
+        .clients {
+            background-color: var(--white);
+        }
+        
+        .client-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .client-item {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: var(--transition);
+            text-align: center;
+            font-weight: 600;
+            color: var(--dark-gray);
+        }
+        
+        .client-item:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background: linear-gradient(135deg, var(--navy) 0%, #1a3a63 100%);
+            color: var(--white);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background-color: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            color: var(--gold);
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            opacity: 0.3;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--gold);
+        }
+        
+        .testimonial-role {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Pricing Section */
+        .pricing {
+            background-color: var(--gray);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .pricing-card {
+            background-color: var(--white);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--navy), var(--gold));
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin: 1.5rem 0;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        
+        .pricing-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-column h3 {
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            opacity: 1;
+            color: var(--gold);
+            padding-left: 5px;
+        }
+        
+        .contact-info {
+            list-style: none;
+        }
+        
+        .contact-info li {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-info i {
+            color: var(--gold);
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.1);
+            color: var(--white);
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background-color: var(--gold);
+            color: var(--navy);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 70%;
+                height: 100vh;
+                background-color: var(--white);
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                transition: var(--transition);
+                box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+                z-index: 1000;
+            }
+            
+            .nav-menu.active {
+                right: 0;
+            }
+            
+            .nav-item {
+                margin: 1.5rem 0;
+            }
+            
+            .hamburger {
+                display: block;
+                z-index: 1001;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .stats-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .stat-item {
+                padding: 1rem;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes countUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .count-up {
+            animation: countUp 1s ease forwards;
+        }
+        
+        /* Utility Classes */
+        .mt-1 { margin-top: 1rem; }
+        .mt-2 { margin-top: 2rem; }
+        .mt-3 { margin-top: 3rem; }
+        .mb-1 { margin-bottom: 1rem; }
+        .mb-2 { margin-bottom: 2rem; }
+        .mb-3 { margin-bottom: 3rem; }
+    </style>
+    <!-- Non-critical CSS will be loaded async -->
+    <link rel="stylesheet" href="non-critical.css" media="print" onload="this.media='all'">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container container">
+            <a href="#" class="logo">TRW <span>Law Firm</span></a>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bangladesh's #1 Law Firm 2025 | TRW Legal Excellence</h1>
+                <p class="hero-subtitle">Global law firm that serves Bangladesh's most innovative people and businesses.</p>
+                
+                <div class="hero-buttons">
+                    <a href="https://booking.tahmidurrahman.com/" class="btn btn-primary">Book Your Consultation <i class="fas fa-arrow-right"></i></a>
+                    <a href="#services" class="btn btn-secondary">Explore Our Services</a>
+                </div>
+                
+                <div class="trust-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Ranked #1 by Bloomberg, IFLR1000 & The Business Standard</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why TRW Section -->
+    <section class="section why-trw" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Shaping Bangladesh's Legal Past, Present & Future</h2>
+                <p>The TRW Law Firm in Bangladesh is one of the Best Corporate Law Firms in Bangladesh which specialises in providing top commercial legal advice and company law services to International clients.</p>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number" id="lawyers-count">0</div>
+                    <div class="stat-label">Lawyers</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" id="offices-count">0</div>
+                    <div class="stat-label">Global Offices</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" id="partners-count">0</div>
+                    <div class="stat-label">Partners</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas Section -->
+    <section class="section practice-areas" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Comprehensive Legal Solutions for Complex Challenges</h2>
+                <p>We provide comprehensive legal solutions across multiple practice areas, combining deep local expertise with international standards to serve our clients' diverse needs.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Corporate Law</h3>
+                    <p>Expert guidance on corporate governance, compliance, and business structuring for optimal legal protection.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3>Banking & Finance</h3>
+                    <p>Comprehensive legal support for financial transactions, regulatory compliance, and banking operations.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Mergers & Acquisitions</h3>
+                    <p>Strategic advice and execution for mergers, acquisitions, and corporate restructuring.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>International Trade</h3>
+                    <p>Navigating complex international trade regulations and cross-border transactions.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Construction Law</h3>
+                    <p>Legal expertise for construction projects, contracts, and dispute resolution.</p>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Environmental Law</h3>
+                    <p>Compliance and litigation services for environmental regulations and sustainability.</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                <a href="https://tahmidurrahman.com/" class="btn btn-primary">View All Practice Areas <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Section -->
+    <section class="section clients">
+        <div class="container">
+            <div class="section-title">
+                <h2>Trusted by Bangladesh's Most Elite Organizations</h2>
+                <p>From Fortune 500 corporations to innovative startups, we deliver unparalleled legal expertise that drives success and protects what matters most.</p>
+            </div>
+            
+            <div class="client-grid">
+                <div class="client-item">Fortune 500 Companies</div>
+                <div class="client-item">Leading Banks</div>
+                <div class="client-item">Tech Giants</div>
+                <div class="client-item">Government Entities</div>
+                <div class="client-item">Healthcare Organizations</div>
+                <div class="client-item">Real Estate Developers</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p>Hear what our clients have to say about our legal services and commitment to excellence.</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">TRW Law Firm provided exceptional legal guidance during our company's expansion into Bangladesh. Their expertise in corporate law was invaluable in navigating local regulations.</p>
+                    <div class="testimonial-author">Nusrat Jahan</div>
+                    <div class="testimonial-role">CEO, TechSolutions Ltd.</div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">The immigration team at TRW made my visa process seamless and stress-free. Their attention to detail and proactive communication exceeded my expectations.</p>
+                    <div class="testimonial-author">Mahmud Hasan</div>
+                    <div class="testimonial-role">Senior Engineer, Global Tech</div>
+                </div>
+                
+                <div class="testimonial-card fade-in">
+                    <p class="testimonial-text">We've relied on TRW for all our banking and finance legal needs for over five years. Their deep industry knowledge and practical approach have been tremendous assets to our organization.</p>
+                    <div class="testimonial-author">Jabed Alam</div>
+                    <div class="testimonial-role">CFO, Prime Bank Limited</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Transparent Consultation Fees</h2>
+                <p>We believe in clear, upfront pricing for our legal services with no hidden costs.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <h3>Partner Consultation</h3>
+                    <div class="price">BDT 2,500 <span>/session</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 60-minute consultation</li>
+                        <li><i class="fas fa-check-circle"></i> Senior legal partner</li>
+                        <li><i class="fas fa-check-circle"></i> Comprehensive case review</li>
+                        <li><i class="fas fa-check-circle"></i> Strategic legal advice</li>
+                    </ul>
+                    <a href="https://booking.tahmidurrahman.com/" class="btn btn-primary">Book Now</a>
+                </div>
+                
+                <div class="pricing-card fade-in">
+                    <h3>Immigration Consultation</h3>
+                    <div class="price">BDT 5,000 <span>/session</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 60-minute consultation</li>
+                        <li><i class="fas fa-check-circle"></i> Immigration specialist</li>
+                        <li><i class="fas fa-check-circle"></i> Visa process guidance</li>
+                        <li><i class="fas fa-check-circle"></i> Documentation review</li>
+                    </ul>
+                    <a href="https://booking.tahmidurrahman.com/" class="btn btn-primary">Book Now</a>
+                </div>
+                
+                <div class="pricing-card fade-in">
+                    <h3>Associate Consultation</h3>
+                    <div class="price">BDT 1,000 <span>/session</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> 45-minute consultation</li>
+                        <li><i class="fas fa-check-circle"></i> Qualified legal associate</li>
+                        <li><i class="fas fa-check-circle"></i> Initial case assessment</li>
+                        <li><i class="fas fa-check-circle"></i> Basic legal guidance</li>
+                    </ul>
+                    <a href="https://booking.tahmidurrahman.com/" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>TRW Law Firm</h3>
+                    <p>Bangladesh's premier legal practice providing exceptional legal services with integrity, expertise, and dedication to client success.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Practice Areas</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Corporate Law</a></li>
+                        <li><a href="#">Banking & Finance</a></li>
+                        <li><a href="#">Mergers & Acquisitions</a></li>
+                        <li><a href="#">International Trade</a></li>
+                        <li><a href="#">Construction Law</a></li>
+                        <li><a href="#">Environmental Law</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Legal District, Supreme Court Road, Dhaka 1212, Bangladesh</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+880 1712 345 678</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@trwlawfirm.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Sun-Thu: 9:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 TRW Law Firm. Bangladesh's #1 Ranked Law Firm. Global legal excellence for Bangladesh's innovators.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "TRW Law Firm",
+      "description": "Bangladesh's premier law firm specializing in corporate law, M&A, banking, and international trade.",
+      "url": "https://trw.com.bd",
+      "telephone": "+8801712345678",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Legal District, Supreme Court Road",
+        "addressLocality": "Dhaka",
+        "postalCode": "1212",
+        "addressCountry": "BD"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "23.8103",
+        "longitude": "90.4125"
+      },
+      "openingHours": "Mo-Th 09:00-17:00 Fr 09:00-16:00",
+      "priceRange": "BDT 1000 - 5000",
+      "areaServed": "Bangladesh",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Legal Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Corporate Law"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Banking & Finance Law"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mergers & Acquisitions"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- JavaScript with defer attribute -->
+    <script defer>
+        // DOM Ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (hamburger) {
+                hamburger.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    hamburger.innerHTML = navMenu.classList.contains('active') ? 
+                        '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+                });
+            }
+            
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    if (this.getAttribute('href') === '#') return;
+                    
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+                        }
+                    }
+                });
+            });
+            
+            // Counter animation
+            function animateCounter(elementId, finalValue, duration) {
+                const element = document.getElementById(elementId);
+                if (!element) return;
+                
+                let startTime = null;
+                const startValue = 0;
+                
+                function step(timestamp) {
+                    if (!startTime) startTime = timestamp;
+                    const progress = Math.min((timestamp - startTime) / duration, 1);
+                    const currentValue = Math.floor(progress * (finalValue - startValue) + startValue);
+                    element.textContent = currentValue + (elementId === 'lawyers-count' ? '+' : '');
+                    
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    } else {
+                        element.textContent = finalValue + (elementId === 'lawyers-count' ? '+' : '');
+                    }
+                }
+                
+                window.requestAnimationFrame(step);
+            }
+            
+            // Intersection Observer for animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        if (entry.target.classList.contains('stats-container')) {
+                            // Animate counters when stats section is in view
+                            animateCounter('lawyers-count', 220, 2000);
+                            animateCounter('offices-count', 7, 2000);
+                            animateCounter('partners-count', 32, 2000);
+                        }
+                        
+                        // Add visible class for CSS animations
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements for animation
+            document.querySelectorAll('.fade-in, .stats-container').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Lazy loading for images
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                });
+                
+                document.querySelectorAll('img.lazy').forEach(img => {
+                    imageObserver.observe(img);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
